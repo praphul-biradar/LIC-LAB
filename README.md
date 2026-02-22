@@ -4,7 +4,7 @@ LIC LAB
 EXPERIMENT  01
 
 
-#Aim:
+# Aim:
 To create a PMOS Common Source amplifier with 180 nm CMOS technology with specified voltage and power limit, and to investigate its functioning in DC analysis,
 transient analysis, and AC analysis in LTspice. 
 
@@ -13,8 +13,14 @@ Given Specifications:
 
 
 1. Supply voltage (VDD) = 1.2 V
+
+
 2.Maximum power ≤ 0.4 mW
+
+
 3.Load capacitance (CL) = 0.5 pF
+
+
 4.Channel length (L) = 360 nm
 
 
@@ -24,7 +30,7 @@ Components Required:
 PMOS transistor (TSMC 180 nm model), drain resistor, DC source, signal source and capacitor.
 
 
-#Theory:
+# Theory:
 
 
 The most significant feature of modern integrated circuits is the contribution of MOSFETs owing to the reduction in size, low power requirements,
@@ -43,7 +49,7 @@ Overdrive voltage:
 VOV = VSG − |VT|
 
 
-#Procedure:
+# Procedure:
 
 
 1. Install LTspice library of TSMC 180 nm technology.
@@ -62,7 +68,7 @@ VOV = VSG − |VT|
 9. Compare theoretical and simulated data.
 
 
-#Design Calculations:
+# Design Calculations:
 
 
 1. Drain Current:
@@ -117,7 +123,7 @@ VSD = VS − VD = 1.2 − 0.6 = 0.6 V
 VOV< VSD    Mosfet is in saturation.
 
 
-#Final Calculated Values:
+# Final Calculated Values:
 Id ≈ 250 uA
 Vd ≈ 0.6 V
 Rd = 2.4 ohm
@@ -125,12 +131,12 @@ Vg = 0.6 V
 VOV = 0.2094 V
 
 
-#CIRCUIT: 
+# CIRCUIT: 
 
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/WhatsApp%20Image%202026-02-20%20at%207.34.26%20PM.jpeg)
 
 
-#DC Analysis
+# DC Analysis
 
 
 DC analysis determines the Q point of operation of the transistor and determines that the transistor is in saturation; thereby ensuring that it amplifies linearly with minimal distortion. It also will help in the examination of bias and component stability. 
@@ -151,7 +157,7 @@ Vout ≈ 0.59 V
 
 
 
-#Transient Analysis
+# Transient Analysis
 
 
 Transient analysis Transient analysis is an analysis of response of an amplifier with time. It allows one to observe the amplification of signals, inversion of phases, distortion and dynamic properties. 
@@ -162,13 +168,18 @@ Transient analysis Transient analysis is an analysis of response of an amplifier
 
 
 
-#Gain Calculation
+# Gain Calculation
 
 
 Theoretical Gain:
 gm = 2ID / VOV = 2.39 mS
+
+
 Av = gm × RD = 5.736
+
+
 Gain (dB) = 20 log10(Av) = 15.16 dB
+
 
 Simulated Gain:
 Input peak-to-peak = 20 mV
@@ -181,7 +192,7 @@ Gain (dB) = 20 log(Av) = 16.65 dB
 Difference is caused due to  channel length modulation, output resistance and short-channel effects.
 
 
-#AC Analysis
+# AC Analysis
 AC analysis is used to determine frequency response, mid-band gain and bandwidth.
 
 
@@ -189,11 +200,17 @@ AC analysis is used to determine frequency response, mid-band gain and bandwidth
 
 
 Mid-Band Gain:
+
+
 From AC plot:
+
+
 Gain ≈ 16.912 dB ≈ 6.8 V/V
 
 
 Bandwidth:
+
+
 BW = 1 / (2 *pi *RD* CL)
 = 132.63 MHz
 
@@ -202,13 +219,15 @@ Simulated bandwidth
 ≈ 131.8 MHz
 
 
-Unity Gain Bandwidth
+Unity Gain Bandwidth:
+
+
 UGB = Av × BW = 6.8 × 131.8 ≈ 896 MHz
 Observed ≈ 913 MHz.
 
 
 
-#Result
+# Result
 
 
 The PMOS Common Source amplifier circuit was successfully designed and simulated using 180 nm CMOS technology within the given power and voltage constraints. 
@@ -218,7 +237,7 @@ The transient analysis result confirmed that the amplification took place with a
 The AC analysis result showed that the amplifier was stable with a mid-band gain of about 6.8 V/V (or 16.9 dB) and a bandwidth very close to the theoretical value of about 132 MHz.
 
 
-#Inference
+# Inference
 
 
 Te design method is justified by the fact that the theoretical values are closely close to the results of the simulated values.
