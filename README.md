@@ -125,9 +125,17 @@ VOV< VSD    Mosfet is in saturation.
 
 # Final Calculated Values:
 Id ≈ 250 uA
+
+
 Vd ≈ 0.6 V
+
+
 Rd = 2.4 ohm
+
+
 Vg = 0.6 V
+
+
 VOV = 0.2094 V
 
 
