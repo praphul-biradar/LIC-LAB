@@ -219,17 +219,17 @@ Gain ≈ 16.912 dB ≈ 6.8 V/V
 Bandwidth:
 
 
-# BW = 1 / (2 *pi *RD* CL) = 132.63 MHz
+BW = 1 / (2 *pi *RD* CL) = 132.63 MHz
 
 
-# Simulated bandwidth ≈ 131.8 MHz
+Simulated bandwidth ≈ 131.8 MHz
 
 
 Unity Gain Bandwidth:
 
 
-# UGB = Av × BW = 6.8 × 131.8 ≈ 896 MHz
-# Observed ≈ 913 MHz.
+UGB = Av × BW = 6.8 × 131.8 ≈ 896 MHz
+Observed ≈ 913 MHz.
 
 
 
