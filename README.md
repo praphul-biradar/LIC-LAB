@@ -39,14 +39,14 @@ source follower and common gate modes of amplifiers. The Common Source arrangeme
 The PMOS transistor must be made to be in a saturation state where it behaves as a voltage-controlled current source in order to be correctly amplified. The following are the conditions of saturation:
 
 
-1. VSG > |VT
+1. Vsg > |VT|
 
 
-2.VSD ≥ VSG − |VT|
+2.Vsd ≥ Vsg − |VT|
 
 
 Overdrive voltage:
-VOV = VSG − |VT|
+Vov = Vsg − |VT|
 
 
 # Procedure:
@@ -74,53 +74,53 @@ VOV = VSG − |VT|
 1. Drain Current:
 Power relation:
 P = VDD × ID
-ID = P / VDD = 0.4 mW / 1.2 V = 0.333 mA
+Id = P / VDD = 0.4 mW / 1.2 V = 0.333 mA
 
 
 We will choose value less than 0.333mA :
 
 
-ID ≈ 250 uA
+# Id ≈ 250 uA
 
 
 2. PMOS Width Calculation:
 
 
 Having equation of saturation current:
-ID = (1/2) μp Cox (W/L) (VOV)^2
+Id = (1/2) μp Cox (W/L) (Vov)^2
 up = 0.0115689 m^2/V·s
 Cox = 0.0084207 F/m^2
 L = 360 nm = 360 × 10^-9m 
-VOV = 0.2094 V
-ID = 250 uA = 250 × 10⁻^6A
+Vov = 0.2094 V
+Id = 250 uA = 250 × 10⁻^6A
 
-On substitution :
-W ≈ 42 um
+# On substitution :
+# W ≈ 42 um
 
 
 3. Output Voltage:
-VD ≈ VDD / 2 = 0.6 V
+Vd ≈ VDD / 2 = 0.6 V
 
 
 4. Drain Resistance:
-RD = VD / ID = 0.6 / (250 uA) = 2.4 kΩ
+RD = Vd / ID = 0.6 / (250 uA) = 2.4 kΩ
 
 
 5. Gate-Source Voltage:
 |VT| = 0.3906 V
-Choose VSG ≈ 0.6 V
+# Choose Vsg ≈ 0.6 V
 Overdrive voltage:
-VOV = 0.6 − 0.3906 = 0.2094 V
+Vov = 0.6 − 0.3906 = 0.2094 V
 
 
 6. Gate Voltage:
-VS = 1.2 V
-VG = VS − VSG = 1.2 − 0.6 = 0.6 V
+Vs = 1.2 V
+Vg = Vs − Vsg = 1.2 − 0.6 = 0.6 V
 
 
 7. Saturation Verification:
-VSD = VS − VD = 1.2 − 0.6 = 0.6 V
-VOV< VSD    Mosfet is in saturation.
+Vsd = Vs − Vd = 1.2 − 0.6 = 0.6 V
+# Vov< Vsd    Mosfet is in saturation.
 
 
 # Final Calculated Values:
@@ -136,7 +136,7 @@ Rd = 2.4 ohm
 Vg = 0.6 V
 
 
-VOV = 0.2094 V
+Vov = 0.2094 V
 
 
 # CIRCUIT: 
@@ -158,8 +158,8 @@ Such values differed with theoretical values due to real-life effects on such de
 
 With increased width to 72 um new results were:
 
-ID ≈ 247 uA
-Vout ≈ 0.59 V
+# ID ≈ 247 uA
+# Vout ≈ 0.59 V
 
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-02-22%20171140.png)
 
@@ -180,7 +180,7 @@ Transient analysis Transient analysis is an analysis of response of an amplifier
 
 
 Theoretical Gain:
-gm = 2ID / VOV = 2.39 mS
+gm = 2Id / Vov = 2.39 mS
 
 
 Av = gm × RD = 5.736
@@ -219,19 +219,17 @@ Gain ≈ 16.912 dB ≈ 6.8 V/V
 Bandwidth:
 
 
-BW = 1 / (2 *pi *RD* CL)
-= 132.63 MHz
+# BW = 1 / (2 *pi *RD* CL) = 132.63 MHz
 
 
-Simulated bandwidth 
-≈ 131.8 MHz
+# Simulated bandwidth ≈ 131.8 MHz
 
 
 Unity Gain Bandwidth:
 
 
-UGB = Av × BW = 6.8 × 131.8 ≈ 896 MHz
-Observed ≈ 913 MHz.
+# UGB = Av × BW = 6.8 × 131.8 ≈ 896 MHz
+# Observed ≈ 913 MHz.
 
 
 
