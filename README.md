@@ -170,7 +170,7 @@ With increased width to 72 um new results were:
 # ID ≈ 247 uA
 # Vout ≈ 0.59 V
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-02-22%20171140.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Q%20point.jpeg)
 
 
 
