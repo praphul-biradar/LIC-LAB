@@ -129,7 +129,7 @@ Vg = Vs − Vsg = 1.2 − 0.6 = 0.6 V
 
 7. Saturation Verification:
 Vsd = Vs − Vd = 1.2 − 0.6 = 0.6 V
-# Vov< Vsd    Mosfet is in saturation.
+# Vov < Vsd    Mosfet is in saturation.
 
 
 # Final Calculated Values:
@@ -165,10 +165,10 @@ Vout ≈ 0.359 V
 
 Such values differed with theoretical values due to real-life effects on such devices such as short-channel effects and loss of mobility.
 
-With increased width to 72 um new results were:
+With increased width to 73 um new results were:
 
-# ID ≈ 247 uA
-# Vout ≈ 0.59 V
+# ID ≈ 250 uA
+# Vout ≈ 0.6 V
 
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Q%20point.jpeg)
 
@@ -192,7 +192,7 @@ Theoretical Gain:
 gm = 2Id / Vov = 2.39 mS
 
 
-Av = gm × RD = 5.736
+Av = gm × RD = 5.736 V/V
 
 
 Gain (dB) = 20 log10(Av) = 15.16 dB
@@ -202,7 +202,7 @@ Simulated Gain:
 Input peak-to-peak = 20 mV
 Output peak-to-peak = 136.05 mV
 
-Av = 136.05 / 20 = 6.80
+Av = 136.05 / 20 = 6.80 V/V
 Gain (dB) = 20 log(Av) = 16.65 dB
 
 
