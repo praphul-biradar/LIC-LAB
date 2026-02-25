@@ -108,6 +108,11 @@ RD = Vd / ID = 0.6 / (250 uA) = 2.4 kΩ
 
 5. Gate-Source Voltage:
 |VT| = 0.3906 V
+
+For saturation region Vsd >= Vgs-|VT|
+0.6 >= Vgs - 0.39
+Vgs =< 0.99
+
 # Choose Vsg ≈ 0.6 V
 Overdrive voltage:
 Vov = 0.6 − 0.3906 = 0.2094 V
