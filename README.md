@@ -74,7 +74,15 @@ Vov = Vsg − |VT|
 1. Drain Current:
 Power relation:
 P = VDD × ID
-Id = P / VDD = 0.4 mW / 1.2 V = 0.333 mA
+
+
+Id = P / VDD 
+
+
+   = 0.4 mW / 1.2 V 
+   
+   
+   = 0.333 mA
 
 
 We will choose value less than 0.333mA :
@@ -88,26 +96,49 @@ We will choose value less than 0.333mA :
 
 Having equation of saturation current:
 Id = (1/2) μp Cox (W/L) (Vov)^2
+
+
 up = 0.0115689 m^2/V·s
+
+
 Cox = 0.0084207 F/m^2
+
+
 L = 360 nm = 360 × 10^-9m 
+
+
 Vov = 0.2094 V
+
+
 Id = 250 uA = 250 × 10⁻^6A
 
 # On substitution :
+
+
 # W ≈ 42 um
 
 
 3. Output Voltage:
-Vd ≈ VDD / 2 = 0.6 V
+Vd ≈ VDD / 2
+
+= 0.6 V
 
 
-4. Drain Resistance:
-RD = Vd / ID = 0.6 / (250 uA) = 2.4 kΩ
+5. Drain Resistance:
+RD = Vd / ID
 
 
-5. Gate-Source Voltage:
+   = 0.6 / (250 uA)
+
+
+   = 2.4 kΩ
+
+
+7. Gate-Source Voltage:
+
+   
 |VT| = 0.3906 V
+
 
 For saturation region Vsd >= Vsg-|VT|
 
@@ -117,18 +148,36 @@ For saturation region Vsd >= Vsg-|VT|
 
 Vsg =< 0.99 V
 
+
 # Choose Vsg ≈ 0.6 V
+
+
 Overdrive voltage:
 Vov = 0.6 − 0.3906 = 0.2094 V
 
 
 6. Gate Voltage:
+
+   
 Vs = 1.2 V
-Vg = Vs − Vsg = 1.2 − 0.6 = 0.6 V
 
 
-7. Saturation Verification:
-Vsd = Vs − Vd = 1.2 − 0.6 = 0.6 V
+Vg = Vs − Vsg 
+
+
+   = 1.2 − 0.6 
+   
+   
+   = 0.6 V
+
+
+8. Saturation Verification:
+Vsd = Vs − Vd
+
+
+    = 1.2 − 0.6 = 0.6 V
+
+   
 # Vov < Vsd    Mosfet is in saturation.
 
 
@@ -160,15 +209,25 @@ DC analysis determines the Q point of operation of the transistor and determines
 
 
 Initial simulation results:
+
+
 ID ≈ 149 uA
+
+
 Vout ≈ 0.359 V
+
 
 Such values differed with theoretical values due to real-life effects on such devices such as short-channel effects and loss of mobility.
 
+
 With increased width to 73 um new results were:
 
+
 # ID ≈ 250 uA
+
+
 # Vout ≈ 0.6 V
+
 
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Q%20point.jpeg)
 
@@ -189,7 +248,10 @@ Transient analysis Transient analysis is an analysis of response of an amplifier
 
 
 Theoretical Gain:
-gm = 2Id / Vov = 2.39 mS
+gm = 2Id / Vov 
+
+
+  = 2.39 mS
 
 
 Av = gm × RD = 5.736 V/V
@@ -199,10 +261,17 @@ Gain (dB) = 20 log10(Av) = 15.16 dB
 
 
 Simulated Gain:
+
+
 Input peak-to-peak = 20 mV
+
+
 Output peak-to-peak = 136.05 mV
 
+
 Av = 136.05 / 20 = 6.80 V/V
+
+
 Gain (dB) = 20 log(Av) = 16.65 dB
 
 
