@@ -115,7 +115,7 @@ For saturation region Vsd >= Vsg-|VT|
 0.6 >= Vsg - 0.39
 
 
-Vsg =< 0.99
+Vsg =< 0.99 V
 
 # Choose Vsg ≈ 0.6 V
 Overdrive voltage:
