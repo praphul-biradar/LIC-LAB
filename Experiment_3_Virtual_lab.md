@@ -49,9 +49,9 @@ Substituting V 1, V 2
 2. As inverting bias current measurement, connect the circuit as depicted in the circuit diagram below.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214703.png)
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214718.png)
 
 
 3. Confirm the connections with the aid of the Check Connection option.
@@ -90,13 +90,13 @@ Converting to nanoampere:
 IB₁ ≈ 51 nA
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214735.png)
 
 
 # The measurement of Non-Inverting Bias Current (IB 2 ) is achieved using the method of measurement of a current.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214744.png)
 
 
 1. Connect the circuit as shown in the circuit diagram in determining the bias current non-inverting.
@@ -104,7 +104,7 @@ IB₁ ≈ 51 nA
 
 2. Check the wiring connections.
 
-![Image description](PASTE_FILENAME_HERE)  
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214756.png)  
 
 
 3. Record the value of the multiplexed voltage on the multimeter.
@@ -164,13 +164,13 @@ Input Offset Current (Iio) can also be measured.
 1. Set the circuit as shown in the input offset current measurement diagram.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214805.png)
 
 
 2. Test the circuit connections.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214814.png)
 
 
 3. Measure the output voltage through the use of the digital multimeter.
@@ -182,7 +182,7 @@ Input Offset Current (Iio) can also be measured.
 Iio = Vo / Rf
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214827.png)
 
 
 Given:
@@ -217,24 +217,24 @@ Measurement of Input Offset Voltage (Vio) - adjusting the input offset voltage w
 
 1. Connect the circuit as illustrated in the diagram by having the circuit components in place.
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214836.png)
 
 
 2. Before going ahead, check out all connections.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214843.png)
 
 
 3. Record the value of the DMM output.
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214850.png)
 
 
 4. Input offset voltage is given as;
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214900.png)
 
 
 Vio = Vo / (1 + Rf / Ri)
@@ -279,13 +279,13 @@ Vio ≈ 1.048 mV
 1. Connect the circuit of slew rate measurement.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214909.png)
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214914.png)
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214921.png)
 
 
 2. Use a feed-in signal of the function generator.
@@ -306,10 +306,10 @@ Vio ≈ 1.048 mV
 SR = 2π fmax Vm / 10⁶  V/µs
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214941.png)
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-06%20214949.png)
 
 
 Given:
