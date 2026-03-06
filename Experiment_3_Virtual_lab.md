@@ -187,7 +187,7 @@ Iio = 6.38 nA
 Iio = 0.00638 µA
 
 
-Measurement of Input Offset Voltage (Vio) - adjusting the input offset voltage will allow the power output to be set to the desired level.<|human|>Measurement of the Input Offset Voltage (Vio) - it is the adjustment of the input offset voltage that will allow the power output to be adjusted to the desired level.
+Measurement of Input Offset Voltage (Vio) - adjusting the input offset voltage will allow the power output to be set to the desired level.Measurement of the Input Offset Voltage (Vio) - it is the adjustment of the input offset voltage that will allow the power output to be adjusted to the desired level.
 
 
 1. Connect the circuit as illustrated in the diagram by having the circuit components in place.
