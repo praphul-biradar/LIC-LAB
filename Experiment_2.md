@@ -376,7 +376,7 @@ BW ≈ 15 MHz
 This frequency corresponds to the point where the gain falls by 3 dB from the midband gain.
 
 
-![Image description]()
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135543.png)
 
 
 # Unity Gain Bandwidth
