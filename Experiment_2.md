@@ -250,10 +250,16 @@ Wp = 128.5 µm
 
 L = 360 nm
 
+![Image description](PASTE_FILENAME_HERE)
+
 
 # DC ANALYSIS
 
 DC analysis is used to determine the quiescent operating point of the amplifier and to ensure that the MOSFET devices operate in the saturation region.
+
+
+![Image description](PASTE_FILENAME_HERE)
+
 
 From the LTspice operating point simulation:
 
@@ -273,6 +279,9 @@ The simulated output voltage is very close to the designed value of 0.8 V, confi
 
 
 # TRANSIENT ANALYSIS
+
+
+![Image description](PASTE_FILENAME_HERE)
 
 
 Transient analysis studies how the circuit responds to a time-varying input signal.
@@ -320,7 +329,7 @@ Av = Vout(pp) / Vin(pp)
 Av = 295.49 / 20
 
 
-Av ≈ 14.77
+Av ≈ 14.77 V/V
 
 
 ## Gain in Decibels
@@ -333,6 +342,8 @@ Gain ≈ 23.38 dB
 
 
 # AC ANALYSIS
+
+![Image description](PASTE_FILENAME_HERE)
 
 
 AC analysis determines how the amplifier gain changes with frequency.
@@ -365,6 +376,9 @@ BW ≈ 15 MHz
 This frequency corresponds to the point where the gain falls by 3 dB from the midband gain.
 
 
+![Image description](PASTE_FILENAME_HERE)
+
+
 # Unity Gain Bandwidth
 
 
@@ -387,6 +401,9 @@ UGB ≈ 244 MHz
 
 
 The slight difference is mainly due to parasitic capacitances and non-ideal transistor behavior.
+
+
+![Image description](PASTE_FILENAME_HERE)
 
 
 # RESULT
