@@ -248,7 +248,7 @@ Wp = 128.5 µm
 
 L = 360 nm
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135456.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20224748.png)
 
 
 # DC ANALYSIS
@@ -256,7 +256,7 @@ L = 360 nm
 DC analysis is used to determine the quiescent operating point of the amplifier and to ensure that the MOSFET devices operate in the saturation region.
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135506.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20224821.png)
 
 
 From the LTspice operating point simulation:
@@ -279,7 +279,7 @@ The simulated output voltage is very close to the designed value of 0.8 V, confi
 # TRANSIENT ANALYSIS
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135517.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20225009.png)
 
 
 Transient analysis studies how the circuit responds to a time-varying input signal.
@@ -341,7 +341,7 @@ Gain ≈ 23.38 dB
 
 # AC ANALYSIS
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135525.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20225438.png)
 
 
 AC analysis determines how the amplifier gain changes with frequency.
@@ -374,8 +374,6 @@ BW ≈ 15 MHz
 This frequency corresponds to the point where the gain falls by 3 dB from the midband gain.
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135543.png)
-
 
 # Unity Gain Bandwidth
 
@@ -401,7 +399,7 @@ UGB ≈ 244 MHz
 The slight difference is mainly due to parasitic capacitances and non-ideal transistor behavior.
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-08%20135559.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20225704.png)
 
 
 # RESULT
