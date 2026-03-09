@@ -1,4 +1,4 @@
-# Experiment 02
+,# Experiment 02
 
 
 # Circuit 01
@@ -180,8 +180,6 @@ The voltage across the source resistor was assumed to be:
 VRS = 0.2 V
 
 
-Using Ohm’s law:
-
 RS = VRS / ID
 
 
@@ -191,7 +189,7 @@ RS = 0.2 / (250 × 10⁻⁶)
 RS = 800 Ω
 
 
-## Output Voltage Selection
+## Output Voltage
 
 
 To allow maximum signal swing, the output voltage was chosen near the middle of the supply range.
@@ -206,7 +204,7 @@ Vout = 0.6 + 0.2
 Vout = 0.8 V
 
 
-## Gate Bias Voltage
+## Gate Voltage
 
 
 For the NMOS transistor:
