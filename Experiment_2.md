@@ -426,7 +426,7 @@ From this experiment it can be concluded that the CMOS amplifier configuration u
 # Circuit 02
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232055.png)
 
 # DC analysis
 
@@ -455,13 +455,13 @@ From the operating point results:
 Vout = 0.904748 V
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232110.png)
 
 
 TRANSIENT ANALYSIS CALCULATIONS
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description]()
 
 
 From the waveform cursor readings:
@@ -539,7 +539,7 @@ Gain ≈ −0.86 dB
 # AC ANALYSIS CALCULATIONS
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232311.png)
 
 
 From the AC magnitude plot, the mid-band gain is approximately:
@@ -569,7 +569,7 @@ Unity gain bandwidth is not applicable for this circuit since the midband gain i
 # Bandwidth
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20223410.png)
 
 
 Bandwidth is determined from the −3 dB cutoff frequency.
@@ -617,13 +617,13 @@ Vout = 0.903457 V
 From the DC operating point analysis obtained in LTspice:
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194010.png)
 
 
 # TRANSIENT ANALYSIS CALCULATIONS
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194022.png)
 
 
 From the transient waveform:
@@ -704,6 +704,9 @@ Gain ≈ 28.6 dB
 From the AC magnitude plot, the mid-band gain is approximately:
 
 
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194216.png)
+
+
 Gain ≈ 29 dB
 
 
@@ -721,7 +724,7 @@ Av ≈ 28.2 V/V
 
 # Bandwidth
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20223221.png)
 
 
 Bandwidth is determined from the −3 dB cutoff frequency.
