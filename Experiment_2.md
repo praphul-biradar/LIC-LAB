@@ -461,7 +461,7 @@ Vout = 0.904748 V
 TRANSIENT ANALYSIS CALCULATIONS
 
 
-![Image description]()
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232311.png)
 
 
 From the waveform cursor readings:
@@ -539,7 +539,7 @@ Gain ≈ −0.86 dB
 # AC ANALYSIS CALCULATIONS
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232311.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232344.png)
 
 
 From the AC magnitude plot, the mid-band gain is approximately:
@@ -596,6 +596,9 @@ BW ≈ 70 MHz
 # circuit 03
 
 
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194010.png)
+
+
 # DC analysis
 
 
@@ -617,13 +620,13 @@ Vout = 0.903457 V
 From the DC operating point analysis obtained in LTspice:
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194010.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194022.png)
 
 
 # TRANSIENT ANALYSIS CALCULATIONS
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194022.png)
+![Image description]()
 
 
 From the transient waveform:
