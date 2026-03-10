@@ -560,7 +560,16 @@ Av = 10^(−0.86/20)
 Av ≈ 0.906 V/V
 
 
+# UGB
+
+
+Unity gain bandwidth is not applicable for this circuit since the midband gain is less than unity (0 dB). Therefore the gain does not cross 0 dB in the frequency response.
+
+
 # Bandwidth
+
+
+![Image description](PASTE_FILENAME_HERE)
 
 
 Bandwidth is determined from the −3 dB cutoff frequency.
@@ -581,10 +590,156 @@ From the AC response plot, the gain reaches approximately −3.86 dB at around:
 BW ≈ 70 MHz
 
 
-# UGB
 
 
-Unity gain bandwidth is not applicable for this circuit since the midband gain is less than unity (0 dB). Therefore the gain does not cross 0 dB in the frequency response.
+
+# circuit 03
+
+
+# DC analysis
+
+
+DESIGN CALCULATIONS
+
+
+1. Drain Current
+
+
+ID ≈ 250 µA
+
+
+2. Output DC Voltage
+
+
+Vout = 0.903457 V
+
+
+From the DC operating point analysis obtained in LTspice:
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+# TRANSIENT ANALYSIS CALCULATIONS
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+From the transient waveform:
+
+
+Maximum output voltage
+
+
+Vmax ≈ 1.00 V
+
+
+Minimum output voltage
+
+
+Vmin ≈ 0.73 V
+
+
+3. Output Peak-to-Peak Voltage
+
+
+Vout(pp) = Vmax − Vmin
+
+
+Vout(pp) = 1.00 − 0.73
+
+
+Vout(pp) = 0.27 V
+
+
+Vout(pp) ≈ 270 mV
+
+
+4. Input Peak-to-Peak Voltage
+
+
+Input signal used in the circuit:
+
+
+SINE(0.91 5m 1k)
+
+
+Input amplitude = 5 mV
+
+
+Vin(pp) = 2 × 5 mV
+
+
+Vin(pp) = 10 mV
+
+
+5. Voltage Gain
+
+
+Av = Vout(pp) / Vin(pp)
+
+
+Av = 270 mV / 10 mV
+
+
+Av = 27 V/V
+
+
+6. Gain in Decibels
+
+
+Gain(dB) = 20 log10(Av)
+
+
+Gain = 20 log10(27)
+
+
+Gain ≈ 28.6 dB
+
+
+# AC ANALYSIS CALCULATIONS
+
+
+From the AC magnitude plot, the mid-band gain is approximately:
+
+
+Gain ≈ 29 dB
+
+
+Conversion to Linear Gain
+
+
+Av = 10^(Gain/20)
+
+
+Av = 10^(29/20)
+
+
+Av ≈ 28.2 V/V
+
+
+# Bandwidth
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+Bandwidth is determined from the −3 dB cutoff frequency.
+
+
+Midband gain ≈ 29 dB
+
+
+−3 dB level = 29 − 3
+
+
+−3 dB level ≈ 26 dB
+
+
+From the AC response plot, the gain reaches approximately 26 dB at around:
+
+
+BW ≈ 100 MHz
 
 
 
