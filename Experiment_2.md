@@ -626,7 +626,7 @@ From the DC operating point analysis obtained in LTspice:
 # TRANSIENT ANALYSIS CALCULATIONS
 
 
-![Image description]()
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194110.png)
 
 
 From the transient waveform:
