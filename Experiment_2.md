@@ -418,3 +418,183 @@ AC analysis indicated a midband gain of approximately 23.7 dB and a bandwidth of
 
 
 From this experiment it can be concluded that the CMOS amplifier configuration using an NMOS transistor with a PMOS active load operates as expected. DC analysis confirmed proper biasing and ensured that the transistors operate in the saturation region. Transient analysis demonstrated the amplification of small input signals. AC analysis showed the gain and bandwidth characteristics of the amplifier. The close agreement between calculated values and simulation results indicates that the amplifier design is correct and effective.
+
+
+
+
+
+# Circuit 02
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+# DC analysis
+
+
+## DESIGN CALCULATIONS
+
+
+1. Drain Current
+
+
+From the DC operating point obtained in LTspice:
+
+
+ID ≈ 250 µA
+
+
+Thus the simulated drain current matches the required design value.
+
+
+2. Output DC Voltage
+
+
+From the operating point results:
+
+
+Vout = 0.904748 V
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+TRANSIENT ANALYSIS CALCULATIONS
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+From the waveform cursor readings:
+
+
+Maximum output voltage
+
+
+Vmax = 913.7996 mV
+
+
+Minimum output voltage
+
+
+Vmin = 895.6754 mV
+
+
+3. Output Peak-to-Peak Voltage
+
+
+Vout(pp) = Vmax − Vmin
+
+
+Vout(pp) = 913.7996 − 895.6754
+
+
+Vout(pp) = 18.1242 mV
+
+
+Vout(pp) ≈ 18.12 mV
+
+
+4. Input Peak-to-Peak Voltage
+
+
+Input signal used in the circuit:
+
+
+SINE(0.91 10m 1k)
+
+
+Input amplitude = 10 mV
+
+
+Vin(pp) = 2 × 10 mV
+
+
+Vin(pp) = 20 mV
+
+
+5. Voltage Gain
+
+
+Av = Vout(pp) / Vin(pp)
+
+
+Av = 18.1242 / 20
+
+
+Av = 0.906
+
+
+6. Gain in Decibels
+
+
+Gain(dB) = 20 log10(Av)
+
+
+Gain = 20 log10(0.906)
+
+
+Gain ≈ −0.86 dB
+
+
+# AC ANALYSIS CALCULATIONS
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+From the AC magnitude plot, the mid-band gain is approximately:
+
+
+Gain ≈ −0.86 dB
+
+
+Conversion to Linear Gain
+
+
+Av = 10^(Gain/20)
+
+
+Av = 10^(−0.86/20)
+
+
+Av ≈ 0.906 V/V
+
+
+# Bandwidth
+
+
+Bandwidth is determined from the −3 dB cutoff frequency.
+
+
+Midband gain = −0.86 dB
+
+
+−3 dB level = −0.86 − 3
+
+
+−3 dB level ≈ −3.86 dB
+
+
+From the AC response plot, the gain reaches approximately −3.86 dB at around:
+
+
+BW ≈ 70 MHz
+
+
+# UGB
+
+
+Unity gain bandwidth is not applicable for this circuit since the midband gain is less than unity (0 dB). Therefore the gain does not cross 0 dB in the frequency response.
+
+
+
+
+
+
+
+
+
+
+
+
+
