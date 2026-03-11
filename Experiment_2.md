@@ -587,7 +587,7 @@ Midband gain = −0.86 dB
 From the AC response plot, the gain reaches approximately −3.86 dB at around:
 
 
-BW ≈ 70 MHz
+BW ≈ 179.19 MHz
 
 
 
@@ -710,7 +710,7 @@ From the AC magnitude plot, the mid-band gain is approximately:
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-10%20194216.png)
 
 
-Gain ≈ 29 dB
+Gain ≈ 27.7 dB
 
 
 Conversion to Linear Gain
@@ -733,19 +733,19 @@ Av ≈ 28.2 V/V
 Bandwidth is determined from the −3 dB cutoff frequency.
 
 
-Midband gain ≈ 29 dB
+Midband gain ≈ 27.7 dB
 
 
-−3 dB level = 29 − 3
+−3 dB level = 27.7 − 3
 
 
-−3 dB level ≈ 26 dB
+−3 dB level ≈ 24.7 dB
 
 
 From the AC response plot, the gain reaches approximately 26 dB at around:
 
 
-BW ≈ 100 MHz
+BW ≈ 19.15 MHz
 
 
 
