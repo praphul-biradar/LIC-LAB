@@ -765,13 +765,13 @@ From the AC response plot, the gain reaches approximately 24.7 dB at around:
 BW ≈ 19.15 MHz
 
 
-Result
+## Result
 
 
 The CMOS amplifier using an NMOS transistor with PMOS active load was successfully designed and simulated. The DC operating point analysis showed a drain current of approximately 250 µA and an output voltage of about 0.903 V. From the transient analysis, the output peak-to-peak voltage was approximately 270 mV for an input peak-to-peak voltage of 10 mV, resulting in a voltage gain of about 27 V/V (≈28.6 dB). The AC analysis indicated a midband gain of approximately 27.7 dB with a bandwidth of nearly 19.15 MHz.
 
 
-Inference
+## Inference
 
 
 The experiment confirms that the CMOS amplifier can achieve high voltage gain when properly biased. The results from DC, transient, and AC analyses are consistent, demonstrating correct amplifier operation. The circuit provides significant amplification with good frequency response.
