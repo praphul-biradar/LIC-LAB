@@ -458,7 +458,7 @@ Vout = 0.904748 V
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232110.png)
 
 
-TRANSIENT ANALYSIS CALCULATIONS
+# TRANSIENT ANALYSIS CALCULATIONS
 
 
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20232311.png)
