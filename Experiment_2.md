@@ -402,6 +402,24 @@ The slight difference is mainly due to parasitic capacitances and non-ideal tran
 ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-09%20225704.png)
 
 
+# RESULT
+
+
+The CMOS amplifier using an NMOS transistor with a PMOS active load was successfully designed and simulated using TSMC 180 nm CMOS technology.
+
+
+DC analysis confirmed a drain current close to 250 µA and an output voltage near 0.8 V. Transient analysis showed that the output signal was amplified to approximately 295 mV peak-to-peak for an input signal of 20 mV. This corresponds to a voltage gain of about 14.77 V/V (23.38 dB).
+
+
+AC analysis indicated a midband gain of approximately 23.7 dB and a bandwidth of about 15 MHz. The unity gain bandwidth obtained from the calculations was around 230 MHz, which closely matches the simulated value.
+
+
+# INFERENCE
+
+
+From this experiment it can be concluded that the CMOS amplifier configuration using an NMOS transistor with a PMOS active load operates as expected. DC analysis confirmed proper biasing and ensured that the transistors operate in the saturation region. Transient analysis demonstrated the amplification of small input signals. AC analysis showed the gain and bandwidth characteristics of the amplifier. The close agreement between calculated values and simulation results indicates that the amplifier design is correct and effective.
+
+
 # Circuit 02
 
 
@@ -574,6 +592,18 @@ From the AC response plot, the gain reaches approximately −3.86 dB at around:
 BW ≈ 179.19 MHz
 
 
+## Result
+
+
+The CMOS amplifier configuration was simulated using LTspice with TSMC 180 nm technology. The DC analysis confirmed that the circuit operates with a drain current close to 250 µA and an output voltage near 0.905 V. From the transient response, the output signal was amplified to approximately 18 mV peak-to-peak for a 20 mV peak-to-peak input signal, giving a voltage gain of around 0.96 V/V (≈-0.86 dB). The AC analysis also showed a similar gain value with a stable frequency response.
+
+
+## Inference
+
+
+From the results it can be observed that the circuit provides small signal amplification with stable biasing. The gain obtained from transient and AC analysis are nearly the same, which confirms the correct operation of the amplifier. The circuit demonstrates basic amplification with moderate gain.
+
+
 # circuit 03
 
 
@@ -735,22 +765,16 @@ From the AC response plot, the gain reaches approximately 24.7 dB at around:
 BW ≈ 19.15 MHz
 
 
-# RESULT
+Result
 
 
-The CMOS amplifier using an NMOS transistor with a PMOS active load was successfully designed and simulated using TSMC 180 nm CMOS technology.
+The CMOS amplifier using an NMOS transistor with PMOS active load was successfully designed and simulated. The DC operating point analysis showed a drain current of approximately 250 µA and an output voltage of about 0.903 V. From the transient analysis, the output peak-to-peak voltage was approximately 270 mV for an input peak-to-peak voltage of 10 mV, resulting in a voltage gain of about 27 V/V (≈28.6 dB). The AC analysis indicated a midband gain of approximately 27.7 dB with a bandwidth of nearly 19.15 MHz.
 
 
-DC analysis confirmed a drain current close to 250 µA and an output voltage near 0.8 V. Transient analysis showed that the output signal was amplified to approximately 295 mV peak-to-peak for an input signal of 20 mV. This corresponds to a voltage gain of about 14.77 V/V (23.38 dB).
+Inference
 
 
-AC analysis indicated a midband gain of approximately 23.7 dB and a bandwidth of about 15 MHz. The unity gain bandwidth obtained from the calculations was around 230 MHz, which closely matches the simulated value.
-
-
-# INFERENCE
-
-
-From this experiment it can be concluded that the CMOS amplifier configuration using an NMOS transistor with a PMOS active load operates as expected. DC analysis confirmed proper biasing and ensured that the transistors operate in the saturation region. Transient analysis demonstrated the amplification of small input signals. AC analysis showed the gain and bandwidth characteristics of the amplifier. The close agreement between calculated values and simulation results indicates that the amplifier design is correct and effective.
+The experiment confirms that the CMOS amplifier can achieve high voltage gain when properly biased. The results from DC, transient, and AC analyses are consistent, demonstrating correct amplifier operation. The circuit provides significant amplification with good frequency response.
 
 
 
