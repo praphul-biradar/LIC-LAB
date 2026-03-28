@@ -273,12 +273,45 @@ Final range:
 
 # 6. Differential Input Voltage Range (Linear Region)
 
-For linear operation:
+
+
+The differential amplifier operates in the linear region only when both transistors (M1 and M2) remain in saturation.
+ 
+
+#    Condition for Linear Operation
+
+For MOS differential pair:
 
 V_id < √2 × V_ov  
 
-V_id < 1.414 × 0.3 ≈ 0.42 V  
+ 
 
+#  Given
+
+V_ov = 0.39 V  
+ 
+
+#  Calculation
+
+V_id(max) = √2 × V_ov  
+
+V_id(max) = 1.414 × 0.3  
+
+V_id(max) ≈ 0.42 V  
+
+ 
+
+#  Final Range
+
+-0.42 V ≤ V_id ≤ 0.42 V  
+
+ 
+
+### 🔹 Conclusion
+
+For |V_id| < 0.42 V → circuit behaves as linear amplifier  
+
+For |V_id| > 0.42 V → one transistor turns OFF → nonlinear behavior occurs  
 
 
 # 7. Output Voltage Range
@@ -561,7 +594,7 @@ V_DD = 0.9 V
 V_SS = -0.9 V  
 Power P = 2.2 mW  
 V_T ≈ 0.4 V  
-V_ov ≈ 0.3 V  
+V_ov ≈ 0.39 V  
 L = 540 nm  
 
 
@@ -613,15 +646,271 @@ V_p ≈ -0.724 V
 V_out1 ≈ V_out2 ≈ -0.055 V  
 
 
-# Observations
+#  Input Common Mode Range (ICMR)
 
-Current splits equally  
-Current mirror operates correctly  
-All transistors are in saturation  
-Slight output offset is observed  
+The input common-mode range is defined as the range of input voltage for which all transistors remain in saturation.
 
 
 
+# Minimum Input Common Mode Voltage
+
+Condition:
+
+Input NMOS must remain ON:
+
+V_GS ≥ V_T  
+
+Using:
+
+V_GS = V_ICM − V_S  
+
+So,
+
+V_ICM(min) = V_S + V_T  
+
+Now,
+
+V_S = V_SS + V_ov  
+
+V_S = -0.9 + 0.3 = -0.6 V  
+
+Therefore:
+
+V_ICM(min) = -0.6 + 0.4  
+
+V_ICM(min) = -0.2 V  
+
+
+
+# Maximum Input Common Mode Voltage
+
+Condition:
+
+Input NMOS must remain in saturation:
+
+V_DS ≥ V_ov  
+
+Using:
+
+V_D ≈ V_DD − V_ov  
+
+V_D = 0.9 − 0.3 = 0.6 V  
+
+Now,
+
+V_ICM(max) = V_D − V_ov  
+
+V_ICM(max) = 0.6 − 0.3  
+
+V_ICM(max) = 0.3 V  
+
+# Final Input Common Mode Range
+
+-0.2 V ≤ V_ICM ≤ 0.3 V  
+
+
+
+# Differential Input Voltage Range (Linear Region)
+
+For linear operation:
+
+V_id < √2 × V_ov  
+
+V_id < 1.414 × 0.3  
+
+V_id < 0.42 V  
+
+
+
+# Conclusion
+
+- ICMR: -0.2 V to 0.3 V  
+- Linear region condition: V_id < 0.42 V  
+
+
+# ifferential Input Voltage Range (Linear Region)
+
+The differential amplifier operates in the linear region only when both transistors (M1 and M2) remain in saturation.
+
+ 
+
+#  Condition for Linear Operation
+
+For MOS differential pair:
+
+V_id < √2 × V_ov  
+
+ 
+
+#  Given
+
+V_ov = 0.39 V  
+
+ 
+
+# 🔹 Calculation
+
+V_id(max) = √2 × V_ov  
+
+V_id(max) = 1.414 × 0.3  
+
+V_id(max) ≈ 0.42 V  
+
+ 
+
+#   Final Range
+
+-0.42 V ≤ V_id ≤ 0.42 V  
+
+ 
+#  Conclusion
+
+For |V_id| < 0.42 V → circuit behaves as linear amplifier  
+
+For |V_id| > 0.42 V → one transistor turns OFF → nonlinear behavior occurs  
+
+
+
+# Step 2: Transient Analysis and Linearity Observation
+
+Transient analysis is performed to observe the linear behavior of the differential amplifier with active load.
+
+Load capacitor:
+
+C_L = 10 pF  
+
+
+# (a) Case 1: V_id < √2 V_ov
+
+Condition:
+
+V_id < 1.414 × V_ov  
+
+V_id < 1.414 × 0.3 ≈ 0.42 V  
+
+Set small differential input:
+
+V_in1 = +10 mV  
+V_in2 = -10 mV  
+
+V_id = 20 mV < 0.42 V  
+
+## Observation:
+
+- Output waveforms are sinusoidal  
+- No distortion observed  
+- Outputs are equal in magnitude  
+- Outputs are 180° out of phase  
+- Circuit operates in linear region  
+
+
+# (b) Case 2: V_id > √2 V_ov
+
+
+![Image description](PASTE_FILENAME_HERE)
+
+
+Condition:
+
+V_id > 0.42 V  
+
+Set large differential input:
+
+V_in1 = +300 mV  
+V_in2 = -300 mV  
+
+V_id = 600 mV > 0.42 V  
+
+# Observation:
+
+- Output becomes distorted  
+- Peaks are clipped or flattened  
+- One transistor carries most of the current  
+- Other transistor goes near cutoff  
+- Nonlinear behavior is observed  
+
+
+# (c) Comparison and Interpretation
+
+| Condition      | Input (V_id)   | Output Behavior  | Operation |
+| V_id < √2 V_ov | Small (20 mV)  | Clean sinusoidal | Linear    |
+| V_id > √2 V_ov | Large (600 mV) | Distorted        | Nonlinear |
+
+
+# Conclusion
+
+The differential amplifier with active load behaves as a linear amplifier for small input signals. When the input exceeds √2 × V_ov, the circuit enters nonlinear region and distortion occurs.
+
+## 🔷 AC Analysis
+
+In AC analysis, the frequency response of the differential amplifier is observed.
+
+
+ ![Image description](PASTE_FILENAME_HERE)
+ 
+
+#  Midband Gain
+
+From the flat region of the plot:
+
+A_v ≈ 6 dB  
+
+Convert to linear:
+
+A_v = 10^(6/20) ≈ 2  
+
+ 
+#  Cutoff Frequencies
+
+Lower cutoff frequency:
+
+f_L ≈ 0 Hz  
+
+ 
+
+Upper cutoff frequency:
+
+From graph at −3 dB point:
+
+A_v - 3 = 6 - 3 = 3 dB  
+
+f_H ≈ 3 GHz to 5 GHz (approx)
+
+ 
+
+#  Bandwidth
+
+BW = f_H - f_L  
+
+BW ≈ 4 GHz  
+
+  # Unity Gain Bandwidth (UGB)
+
+
+  ![Image description](PASTE_FILENAME_HERE)
+  
+
+Unity Gain Bandwidth is defined as the frequency at which the gain becomes 0 dB.
+
+From AC plot:
+
+UGB ≈ 5.035 GHz  
+
+   
+
+#  Observation
+
+- Gain crosses 0 dB at ≈ 5 GHz  
+- Phase at this point ≈ −90°  
+- Indicates stable amplifier behavior  
+  
+
+# Conclusion
+
+The Unity Gain Bandwidth of the differential amplifier is approximately 5.035 GHz.
+#  Conclusion
+
+The amplifier shows a flat midband gain of approximately 6 dB with a very high bandwidth in the GHz range. The gain starts decreasing after the upper cutoff frequency, indicating typical high-frequency roll-off behavior.
 
 
 
