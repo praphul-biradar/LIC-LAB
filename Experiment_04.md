@@ -807,7 +807,7 @@ V_id = 20 mV < 0.42 V
 # (b) Case 2: V_id > √2 V_ov
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20194740.png)
 
 
 Condition:
@@ -846,7 +846,7 @@ The differential amplifier with active load behaves as a linear amplifier for sm
 In AC analysis, the frequency response of the differential amplifier is observed.
 
 
- ![Image description](PASTE_FILENAME_HERE)
+ ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20194658.png)
  
 
 #  Midband Gain
@@ -887,7 +887,7 @@ BW ≈ 4 GHz
   # Unity Gain Bandwidth (UGB)
 
 
-  ![Image description](PASTE_FILENAME_HERE)
+  ![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20194209.png)
   
 
 Unity Gain Bandwidth is defined as the frequency at which the gain becomes 0 dB.
