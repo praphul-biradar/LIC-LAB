@@ -486,7 +486,7 @@ BW = f_H − f_L
 BW ≈ 316.2 MHz  
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164251.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20163100.png)
 
 
 # Unity Gain Bandwidth (UGB)
