@@ -152,7 +152,7 @@ When equal voltages are applied at both inputs (common-mode input), the tail cur
 Hence, no differential output is produced.
 
 
-### 🔹 Differential Operation
+## 🔹 Differential Operation
 
 When a differential input is applied:
 
@@ -181,6 +181,9 @@ Voltage drop across R_D of M2 decreases → V_out2 increases
 ## DC Analysis
 
 
+![Image description](PASTE_FILENAME_HERE)
+
+
 #  Design Calculations
 
 # Given Parameters
@@ -194,7 +197,7 @@ Voltage drop across R_D of M2 decreases → V_out2 increases
  V_ov = 0.3 V  
  L = 540 nm  
 
----
+
 
 # 🔹 1. Tail Current Calculation
 
@@ -247,6 +250,8 @@ W = 67.8 × 540 nm
 W ≈ 37 μm  
 
 
+![Image description](PASTE_FILENAME_HERE)
+
 
 # 🔹 5. Input Common Mode Range (ICMR)
 
@@ -296,6 +301,8 @@ A load capacitor is connected at the output:
 C_L = 10 pF  
 
 
+![Image description](PASTE_FILENAME_HERE)
+
 
 # Condition for Linear Operation
 
@@ -329,6 +336,10 @@ V_id = 40 mV < 0.42 V
 
 
 # (b) Case 2: V_id > √2 V_ov
+
+
+![Image description](PASTE_FILENAME_HERE)
+
 
 Set a large differential input:
 
@@ -367,6 +378,9 @@ In AC analysis, the frequency response of the differential amplifier is observed
 
 The midband gain is obtained from the flat region of the Bode plot.  
 The bandwidth is defined as the range between the lower cutoff frequency (f_L) and upper cutoff frequency (f_H), measured at the −3 dB points.
+
+
+![Image description](PASTE_FILENAME_HERE)
 
 
 # Midband Gain
