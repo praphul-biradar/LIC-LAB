@@ -524,6 +524,102 @@ The AC analysis shows that the differential amplifier has a high bandwidth. The 
 
 
 
+## Circuit 2
+
+
+## Differential Amplifier (Active Load) – Analysis
+
+
+
+##  Aim
+
+To design and analyze a MOS differential amplifier with active load, determine its DC operating point, and evaluate its performance in terms of gain, linearity, and frequency response using LTspice.
+
+
+
+# Introduction
+
+A differential amplifier amplifies the difference between two input signals while rejecting common-mode signals. In this circuit, an active load (current mirror) is used instead of resistors, which increases gain and improves performance.
+
+
+
+# Circuit Description
+
+The circuit consists of:
+
+- M1, M2 → NMOS differential pair  
+- M3, M4 → PMOS current mirror (active load)  
+- M5 → Tail current source  
+
+
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20163100.png)
+
+
+# Given Parameters
+
+V_DD = 0.9 V  
+V_SS = -0.9 V  
+Power P = 2.2 mW  
+V_T ≈ 0.4 V  
+V_ov ≈ 0.3 V  
+L = 540 nm  
+
+
+# Design Calculations
+
+# Tail Current
+
+I_SS = P / (V_DD - V_SS)  
+
+I_SS = 2.2 mW / 1.8 V  
+
+I_SS ≈ 1.22 mA  
+
+
+
+# Branch Current
+
+I_D = I_SS / 2  
+
+I_D ≈ 0.61 mA  
+
+
+
+# Bias Voltage
+
+V_GS = V_T + V_ov  
+
+V_GS = 0.34 + 0.3 = 0.64 V  
+
+V_B = V_S + V_GS  
+
+V_B = -0.9 + 0.64  
+
+V_B ≈ -0.26 V  
+
+
+
+## DC Analysis (Simulation)
+
+
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20163100.png)
+
+
+## 🔹 Results
+
+I_SS ≈ 1.23 mA  
+I_D1 = I_D2 ≈ 0.615 mA  
+V_p ≈ -0.724 V  
+V_out1 ≈ V_out2 ≈ -0.055 V  
+
+
+# Observations
+
+Current splits equally  
+Current mirror operates correctly  
+All transistors are in saturation  
+Slight output offset is observed  
+
 
 
 
