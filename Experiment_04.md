@@ -486,6 +486,30 @@ BW = f_H − f_L
 BW ≈ 316.2 MHz  
 
 
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164251.png)
+
+
+# Unity Gain Bandwidth (UGB)
+
+Unity Gain Bandwidth (UGB) is defined as the frequency at which the gain becomes 1 (0 dB).
+
+
+
+# From AC Plot
+
+From the graph:
+
+The gain crosses **0 dB** at approximately:
+
+UGB ≈ 45.9 MHz  
+
+
+
+ Final Result
+
+UGB ≈ 45.9 MHz  
+
+
 #  Observation
 
 Gain is constant in midband region
