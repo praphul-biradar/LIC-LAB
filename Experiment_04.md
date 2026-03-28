@@ -181,7 +181,7 @@ Voltage drop across R_D of M2 decreases → V_out2 increases
 ## DC Analysis
 
 
-![Image description]()
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164551.png)
 
 
 #  Design Calculations
@@ -250,7 +250,7 @@ W = 67.8 × 540 nm
 W ≈ 37 μm  
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164543.png)
 
 
 # 🔹 5. Input Common Mode Range (ICMR)
@@ -301,7 +301,7 @@ A load capacitor is connected at the output:
 C_L = 10 pF  
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164439.png)
 
 
 # Condition for Linear Operation
@@ -338,7 +338,7 @@ V_id = 40 mV < 0.42 V
 # (b) Case 2: V_id > √2 V_ov
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20170759.png)
 
 
 Set a large differential input:
@@ -380,7 +380,7 @@ The midband gain is obtained from the flat region of the Bode plot.
 The bandwidth is defined as the range between the lower cutoff frequency (f_L) and upper cutoff frequency (f_H), measured at the −3 dB points.
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-27%20164251.png)
 
 
 # Midband Gain
@@ -394,6 +394,71 @@ The corresponding linear gain is:
 A_v = 10^(12.45/20) ≈ 4.19  
 
 
+# Theoretical Gain Calculation
+
+
+# Given Values
+
+Drain current: I_D = 0.61 mA  
+Overdrive voltage: V_ov = 0.3 V  
+Drain resistance: R_D = 1.47 kΩ  
+Channel length modulation parameter: λ = 0.1  
+
+
+
+# Step 1: Transconductance (g_m)
+
+g_m = 2I_D / V_ov  
+
+g_m = (2 × 0.61 mA) / 0.3  
+
+g_m ≈ 4.07 mS  
+
+
+
+#  Step 2: Output Resistance (r_o)
+
+r_o = 1 / (λ × I_D)  
+
+r_o = 1 / (0.1 × 0.61 mA)  
+
+r_o = 1 / 0.000061  
+
+r_o ≈ 16.4 kΩ  
+
+
+
+# Step 3: Effective Load Resistance
+
+R_eff = R_D || r_o  
+
+R_eff = (1.47 kΩ × 16.4 kΩ) / (1.47 kΩ + 16.4 kΩ)  
+
+R_eff ≈ 1.35 kΩ  
+
+
+
+# Step 4: Voltage Gain
+
+A_v = g_m × R_eff  
+
+A_v = 4.07 × 10⁻³ × 1350  
+
+A_v ≈ 5.5  
+
+
+Reason for Difference Between Theoretical and Simulated Gain
+
+The theoretical gain is higher than the simulated gain due to the following reasons:
+
+- Theoretical calculations neglect parasitic effects  
+- Channel length modulation reduces gain  
+- Finite output resistance of MOSFET reduces effective load  
+- Presence of load capacitance affects gain  
+- Simulation uses real device models (TSMC 0.18)  
+- Gain is measured as single-ended output instead of differential output  
+
+Hence, the simulated gain is lower than the theoretical value.
 
 # −3 dB Gain
 
@@ -419,10 +484,6 @@ f_H ≈ 316.2 MHz
 BW = f_H − f_L  
 
 BW ≈ 316.2 MHz  
-
-
-
- 
 
 
 #  Observation
