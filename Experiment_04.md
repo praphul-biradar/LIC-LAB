@@ -552,7 +552,7 @@ The circuit consists of:
 - M5 → Tail current source  
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20163100.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20172015.png)
 
 
 # Given Parameters
@@ -602,7 +602,7 @@ V_B ≈ -0.26 V
 ## DC Analysis (Simulation)
 
 
-![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20163100.png)
+![Image description](https://github.com/praphul-biradar/LIC-LAB/blob/main/Screenshot%202026-03-28%20172139.png)
 
 
 ## 🔹 Results
