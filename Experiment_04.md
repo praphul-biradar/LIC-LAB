@@ -181,7 +181,7 @@ Voltage drop across R_D of M2 decreases → V_out2 increases
 ## DC Analysis
 
 
-![Image description](PASTE_FILENAME_HERE)
+![Image description]()
 
 
 #  Design Calculations
